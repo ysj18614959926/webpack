@@ -1,4 +1,4 @@
 import foo from './foo'
-import './style.css'
-import 'bootstrap/dist/css/bootstrap.css'
+import './style.less'
+// import 'bootstrap/dist/css/bootstrap.css'
 foo()
