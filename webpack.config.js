@@ -44,6 +44,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
+            cacheDirectory: true //配置babel打包结果缓存，默认会将转换结果缓存到 node_modules/.chache目录中
           }
         }
       }
