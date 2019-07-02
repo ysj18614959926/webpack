@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: './src/index.js', //打包的入口
   mode: 'development', //development:开发模式，没有优化速度快--production:生成模式，有优化，速度慢，默认生成模式
@@ -22,5 +23,10 @@ module.exports = {
         ],
       },
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html'
+    })
+  ]
 }
