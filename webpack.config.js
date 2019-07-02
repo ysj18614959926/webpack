@@ -5,5 +5,13 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'), //将打包的结果放到dist目录中
     filename: 'main.js' //自定义打包结果的文件名
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+      }
+    ]
   }
 }
